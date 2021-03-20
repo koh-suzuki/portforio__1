@@ -1,0 +1,19 @@
+.skill__bg {
+  background: url(/image/keyboard-338502_1280@2x.png) no-repeat center / cover;
+}
+.sub__title {
+  margin: 30px 0 10px;
+}
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 60px 25px 0;
+}
+.content__item {
+  width: calc((100%/3) - 30px);
+}
+.content__text {
+  padding: 24px 0 35px 0;
+}

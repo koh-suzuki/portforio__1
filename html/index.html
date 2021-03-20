@@ -36,7 +36,7 @@
     <section class="section__wrapper">
       <div class="container">
         <div class="section__inner">
-          <h3 class="section__title" id="about">About</h3>
+          <h3 class="section__title about__title-mt" id="about">About</h3>
           <p class="section__text">テキストテキストテキストテキストテキス トテキストテキストテキストテキスト</p>
           <div class="section__about">
             <figure class="about__img">
@@ -64,42 +64,46 @@
         <div class="section__inner">
           <h3 class="section__title" id="works">Works</h3>
           <p class="section__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-          <article class="works__list">
-            <div class="work__item" id="1">
-              <div class="work__img">
-                <img src="#" alt="workの画像">
+          <article class="works__wrapper">
+            <div class="works__list">
+              <div class="work__item" id="1">
+                <div class="works__item-line">
+                  <div class="work__img">
+                    <img src="#" alt="workの画像">
+                  </div>
+                  <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                </div>
               </div>
-              <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-            <div class="work__item" id="2">
-              <div class="work__img">
-                <img src="#" alt="workの画像">
+              <div class="work__item" id="2">
+                <div class="work__img">
+                  <img src="#" alt="workの画像">
+                </div>
+                <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
               </div>
-              <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-            <div class="work__item" id="3">
-              <div class="work__img">
-                <img src="#" alt="workの画像">
+              <div class="work__item" id="3">
+                <div class="work__img">
+                  <img src="#" alt="workの画像">
+                </div>
+                <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
               </div>
-              <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-            <div class="work__item" id="4">
-              <div class="work__img">
-                <img src="#" alt="workの画像">
+              <div class="work__item" id="4">
+                <div class="work__img">
+                  <img src="#" alt="workの画像">
+                </div>
+                <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
               </div>
-              <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-            <div class="work__item" id="5">
-              <div class="work__img">
-                <img src="#" alt="workの画像">
+              <div class="work__item" id="5">
+                <div class="work__img">
+                  <img src="#" alt="workの画像">
+                </div>
+                <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
               </div>
-              <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-            </div>
-            <div class="work__item" id="6">
-              <div class="work__img">
-                <img src="#" alt="workの画像">
+              <div class="work__item" id="6">
+                <div class="work__img">
+                  <img src="#" alt="workの画像">
+                </div>
+                <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
               </div>
-              <p class="work__text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </div>
           </article>
         </div>
@@ -127,7 +131,7 @@
       <!-- //container -->
     </section>
     <!-- //section__wrapper -->
-    <section class="skill__wrapper">
+    <section class="skill__wrapper skill__bg">
       <div class="skill__view">
         <div class="container">
           <div class="skill__inner">
@@ -178,9 +182,10 @@
           <input type="mail" name="mail" class="form__text">
           <label for="title" class="form__label">題名</label>
           <input type="text" name="title" class="form__text">
+          <label for="title" class="form__label">本文</label>
           <label for="textarea" class="form__label"></label>
-          <textarea name="textarea" class="form__textarea" cols="30" rows="10"></textarea>
-          <input type="button" value="送信">
+          <textarea name="textarea" class="form__textarea" cols="30" rows="7"></textarea>
+          <input type="button" class="btn form__btn" value="送信">
         </form>
         <!-- //contact__form -->
       </div>
@@ -192,10 +197,10 @@
   <footer class="footer">
     <nav class="footer__nav">
       <ul class="footer__list">
-        <li class="footer__item">About<a href="#"></a></li>
-        <li class="footer__item">Works<a href="#"></a></li>
-        <li class="footer__item">Service<a href="#"></a></li>
-        <li class="footer__item">Contact<a href="#"></a></li>
+        <li class="footer__item"><a href="#">About</a></li>
+        <li class="footer__item"><a href="#">Works</a></li>
+        <li class="footer__item"><a href="#">Service</a></li>
+        <li class="footer__item"><a href="#">Contact</a></li>
       </ul>
       <!-- //footer__list -->
     </nav>

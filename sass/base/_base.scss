@@ -44,6 +44,9 @@ vertical-align: top;
   display: flex;
   flex-direction: column;
 }
+.section__title {
+  margin-bottom: 50px;
+}
 .section__text {
   max-width: 26.7vw;
   text-align: center;
