@@ -225,4 +225,198 @@ ul {
 img {
   vertical-align: top;
 }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__text {
+  max-width: 26.7vw;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.section__inner {
+  padding: 50px 0;
+  text-align: center;
+}
+
+body {
+  font-family: "游ゴシック体";
+}
+
+.section__title {
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: #A26C54;
+}
+
+.section__text {
+  font-size: 18px;
+  line-height: 1.72222;
+  letter-spacing: 0em;
+  font-family: "游ゴシック体";
+  color: #505050;
+}
+
+/************* header **************/
+.main__title {
+  text-align: left;
+  font-family: "Lato";
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  color: #505050;
+}
+
+.header__item > a {
+  font-size: 18px;
+  line-height: 1.22222;
+  letter-spacing: 0em;
+  font-family: "Lato";
+  color: #505050;
+}
+
+/************* main **************/
+/* fv */
+.sub__title {
+  font-size: 60px;
+  line-height: 1.2;
+  letter-spacing: 0em;
+  font-family: "Lato";
+  color: #FFFFFF;
+}
+
+.fv__text {
+  font-size: 18px;
+  line-height: 1.72222;
+  letter-spacing: 0em;
+  color: #FFFFFF;
+}
+
+.fv__btn {
+  font-size: 22px;
+  line-height: 1.68182;
+  letter-spacing: 0em;
+  font-family: "游ゴシック体";
+  text-align: left;
+  color: #FFFFFF;
+}
+
+/* about */
+.about__title {
+  font-size: 30px;
+  line-height: 1.7;
+  letter-spacing: 0em;
+  font-family: "游ゴシック体";
+  text-align: left;
+  color: #A26C54;
+}
+
+.about__text {
+  font-size: 18px;
+  line-height: 1.72222;
+  letter-spacing: 0em;
+  font-family: "游ゴシック体";
+  text-align: left;
+  color: #505050;
+}
+
+/************* footer **************/
+.header {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 9.5vh;
+  background-color: #FFFFFF;
+  opacity: 1;
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.3vw;
+  height: 100%;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: -8px;
+}
+
+.header__item {
+  padding: 0 19px 6px;
+}
+
+.fv__bg {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: url("/image/keyboard-338502_1280.png") no-repeat center/cover;
+  opacity: 1;
+}
+
+.fv__inner {
+  text-align: center;
+  max-width: 33vw;
+  padding: 17.1vh 0  19.8vh;
+}
+
+.fv__text {
+  margin: 8.2vh 0;
+}
+
+.fv__btn {
+  padding: 15px 19px;
+  background: #A26C54 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+}
+
+.section__about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 56.3vh;
+}
+
+.about__img {
+  width: 100%;
+  max-width: 44.5vw;
+  height: 100%;
+  background-color: #CCCCCC;
+  margin-right: 15px;
+}
+
+.about__list {
+  max-width: 45vw;
+  height: 100%;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.about__text {
+  margin: 3vh 0;
+}
+
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.work__item {
+  max-width: 370px;
+}
 /*# sourceMappingURL=style.css.map */

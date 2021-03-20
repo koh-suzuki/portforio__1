@@ -1,0 +1,68 @@
+body {
+  font-family: "游ゴシック体";
+}
+.section__title {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(40, 48, false, 0);
+  color: #A26C54;
+}
+.section__text {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(18, 31, false, 0);
+  font-family: "游ゴシック体";
+  color: #505050;
+}
+
+/************* header **************/  
+.main__title{
+  text-align: left;
+  font-family: "Lato";
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(40, 48, false, 0);
+  color: #505050;
+}
+.header__item > a {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(18, 22, false, 0);
+  font-family: "Lato";
+  color: #505050;
+}
+
+/************* main **************/
+/* fv */
+.sub__title {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(60, 72, false, 0);
+  font-family: "Lato";
+  color: #FFFFFF;
+}
+.fv__text {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(18, 31, false, 0);
+  color: #FFFFFF;
+}
+.fv__btn {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(22, 37, false, 0);
+  font-family: "游ゴシック体";
+  text-align: left;
+  color: #FFFFFF;
+}
+
+/* about */ 
+.about__title {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(30, 51, false, 0);
+  font-family: "游ゴシック体";
+  text-align: left;
+  color: #A26C54;
+}
+.about__text {
+  //フォントサイズ, 行送り, 太さ, 字送り
+  @include f_around(18, 31, false, 0);
+  font-family: "游ゴシック体";
+  text-align: left;
+  color: #505050;
+}
+
+/************* footer **************/

@@ -1,0 +1,9 @@
+.works__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.work__item {
+  max-width: 370px;
+}

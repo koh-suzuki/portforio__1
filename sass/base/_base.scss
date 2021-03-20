@@ -38,3 +38,19 @@ list-style: none;
 img {
 vertical-align: top;
 }
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.section__text {
+  max-width: 26.7vw;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.section__inner {
+  padding: 50px 0;
+  text-align: center;
+}

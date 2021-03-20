@@ -1,0 +1,23 @@
+.section__about {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 56.3vh;
+}
+.about__img {
+  width: 100%;
+  max-width: 44.5vw;
+  height: 100%;
+  background-color: #CCCCCC;
+  margin-right: 15px;
+}
+.about__list {
+  max-width: 45vw;
+  height: 100%;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.about__text {
+  margin: 3vh 0;
+}
