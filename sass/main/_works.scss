@@ -1,13 +1,13 @@
 .works__list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  margin-bottom: -20px;
 }
 .work__item {
   width: calc(33% - 15px);
   border: solid 1px #CCCCCC;
-  margin-top: 20px;
+  margin: 0 0 20px
 }
 .work__img {
   width: 100%;
@@ -19,7 +19,7 @@
   }
 }
 .work__text {
-  padding: 20px 23px; 
+  padding: 12px 21px; 
 }
 #works > .section__text {
   padding-bottom: -20px;

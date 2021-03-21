@@ -6,21 +6,23 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 56.3vh;
+  height: 450px;
 }
 .about__img {
-  width: 100%;
-  max-width: 44.5vw;
+  width: 50%;
   height: 100%;
   background-color: #CCCCCC;
   margin-right: 15px;
 }
 .about__list {
-  max-width: 45vw;
-  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
   flex-direction: column;
   margin-left: 15px;
 }
+.about__item {
+  padding-bottom: 35px;
+}
 .about__text {
-  margin: 3vh 0;
+  padding: 20px 0 0;
 }

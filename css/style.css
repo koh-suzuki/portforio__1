@@ -234,14 +234,14 @@ img {
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 44px;
 }
 
 .section__text {
-  max-width: 26.7vw;
+  max-width: 27.7vw;
   text-align: center;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding-bottom: 47px;
 }
 
 .section__inner {
@@ -254,8 +254,8 @@ body {
 }
 
 .section__title {
-  font-size: 40px;
-  line-height: 1.2;
+  font-size: 37px;
+  line-height: 1.2973;
   letter-spacing: 0em;
   color: #A26C54;
 }
@@ -272,8 +272,8 @@ body {
 .main__title {
   text-align: left;
   font-family: "Lato";
-  font-size: 40px;
-  line-height: 1.2;
+  font-size: 33px;
+  line-height: 1.45455;
   letter-spacing: 0em;
   color: #505050;
 }
@@ -289,8 +289,8 @@ body {
 /************* main **************/
 /* fv */
 .sub__title {
-  font-size: 60px;
-  line-height: 1.2;
+  font-size: 50px;
+  line-height: 1.44;
   letter-spacing: 0em;
   font-family: "Lato";
   color: #FFFFFF;
@@ -315,7 +315,7 @@ body {
 /* about */
 .about__title {
   font-size: 30px;
-  line-height: 1.7;
+  line-height: 1;
   letter-spacing: 0em;
   font-family: "游ゴシック体";
   text-align: left;
@@ -414,7 +414,7 @@ body {
 
 /************* footer **************/
 .footer__item > a,
-.copyright {
+.copyright > small {
   font-family: "Lato";
   font-size: 18px;
   line-height: 1.22222;
@@ -423,9 +423,7 @@ body {
 }
 
 .header {
-  max-width: 1280px;
-  margin: 0 auto;
-  height: 9.5vh;
+  height: 75px;
   background-color: #FFFFFF;
   opacity: 1;
 }
@@ -447,7 +445,7 @@ body {
 }
 
 .header__item {
-  padding: 0 19px 6px;
+  padding: 0 16px 2px;
 }
 
 .fv__bg {
@@ -463,15 +461,16 @@ body {
 .fv__inner {
   text-align: center;
   max-width: 33vw;
-  padding: 17.1vh 0  19.8vh;
+  padding: 25vh 0  36vh;
 }
 
 .fv__text {
-  margin: 8.2vh 0;
+  margin: 13vh auto;
+  max-width: 350px;
 }
 
 .fv__btn {
-  padding: 15px 19px;
+  padding: 8px 19px;
   background: #A26C54 0% 0% no-repeat padding-box;
   border-radius: 10px;
 }
@@ -485,39 +484,42 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 56.3vh;
+  height: 450px;
 }
 
 .about__img {
-  width: 100%;
-  max-width: 44.5vw;
+  width: 50%;
   height: 100%;
   background-color: #CCCCCC;
   margin-right: 15px;
 }
 
 .about__list {
-  max-width: 45vw;
-  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
   flex-direction: column;
   margin-left: 15px;
 }
 
+.about__item {
+  padding-bottom: 35px;
+}
+
 .about__text {
-  margin: 3vh 0;
+  padding: 20px 0 0;
 }
 
 .works__list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-between;
+  margin-bottom: -20px;
 }
 
 .work__item {
   width: calc(33% - 15px);
   border: solid 1px #CCCCCC;
-  margin-top: 20px;
+  margin: 0 0 20px;
 }
 
 .work__img {
@@ -532,7 +534,7 @@ body {
 }
 
 .work__text {
-  padding: 20px 23px;
+  padding: 12px 21px;
 }
 
 #works > .section__text {
@@ -561,7 +563,24 @@ body {
 }
 
 .skill__bg {
-  background: url(/image/keyboard-338502_1280@2x.png) no-repeat center/cover;
+  background: url(/image/macbook-336692_1280/macbook-336692_1280.png) no-repeat center/cover;
+  position: relative;
+}
+
+.skill__bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+  background-color: #707070;
+  display: block;
+}
+
+.skill__inner {
+  z-index: 1;
 }
 
 .sub__title {
@@ -592,7 +611,7 @@ body {
 .contact__text {
   margin: 0 auto;
   text-align: center;
-  width: 35vw;
+  width: 36%;
 }
 
 .contact__text {
@@ -603,7 +622,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 45vw;
+  width: 50%;
   margin: 0 auto;
   padding-bottom: 85px;
 }

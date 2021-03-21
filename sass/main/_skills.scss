@@ -1,5 +1,20 @@
 .skill__bg {
-  background: url(/image/keyboard-338502_1280@2x.png) no-repeat center / cover;
+  background: url(/image/macbook-336692_1280/macbook-336692_1280.png) no-repeat center / cover;
+  position: relative;
+}
+.skill__bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+  background-color: #707070;
+  display:block;
+}
+.skill__inner {
+  z-index: 1;
 }
 .sub__title {
   margin: 30px 0 10px;
