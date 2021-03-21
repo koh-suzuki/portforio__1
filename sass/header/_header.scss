@@ -25,10 +25,25 @@
 }
 
 .header__list {
-  // display: none;
+  display: none;
 }
 
+
 // ハンバーガーメニュー
+.u-visuallyHidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%); 
+}
+.p-hamburger:hover {
+  opacity: .8;
+}
 .p-hamburger__line {
   position: absolute;
   width: 18px; /* お肉の幅 */
@@ -89,10 +104,33 @@
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
+          transition: transform .8s
 }
 
 .p-hamburger[aria-expanded="true"] .p-hamburger__line::after {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+          transition: transform .8s
+
+}
+.p-hamburger[aria-expanded="false"] .p-hamburger__line::before {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+          transition: transform .8s
+}
+
+.p-hamburger[aria-expanded="false"] .p-hamburger__line::after {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+          transition: transform .8s
+
+}
+
+@include mq-down($breakpoint: md) {
+  .header {
+    height: 55px;
+  }
 }

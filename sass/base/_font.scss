@@ -137,3 +137,37 @@ body {
   @include f_around(18, 22, false, 0);
   color: #FFFFFF;
 }
+
+@include mq-down($breakpoint: md) {
+  /************* header **************/  
+  .main__title{
+    @include f_around(20, 50, false, 0);
+  }
+  .sub__title {
+    @include f_around(35, 50, false, 0);
+  } 
+  .fv__text {
+    @include f_around(17, 25, false, 0);
+  }
+  .fv__btn {
+    //フォントサイズ, 行送り, 太さ, 字送り
+    @include f_around(20, 20, false, 0);
+  } 
+}
+
+@include mq-down($breakpoint: sm) {
+  /************* header **************/  
+  .main__title{
+    @include f_around(20, 28, false, 0);
+  }
+  .sub__title {
+    @include f_around(18, 20, false, 0);
+  } 
+  .fv__text {
+    @include f_around(10, 13, false, 0);
+  }
+  .fv__btn {
+    //フォントサイズ, 行送り, 太さ, 字送り
+    @include f_around(10, 17, false, 0);
+  } 
+}

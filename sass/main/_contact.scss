@@ -45,3 +45,14 @@
   margin: 0 auto;
   margin-top: 20px;
 }
+
+@include mq-down($breakpoint: md) {
+  .contact__title,
+  .contact__text {
+    margin: 0 auto;
+    width: 65%;
+  }
+  .contact__form {
+    width: 80%;
+  }
+}

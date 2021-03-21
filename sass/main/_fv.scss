@@ -21,3 +21,39 @@
   background: #A26C54 0% 0% no-repeat padding-box;
   border-radius: 10px;
 }
+
+@include mq-down($breakpoint: md) {
+  .fv__inner {
+    max-width: 48vw;
+    padding: 0;
+  }
+  .fv__text {
+    margin: 40px auto;
+    max-width: 650px;
+  }
+  .fv__btn {
+    padding: 12px 19px;
+    background: #A26C54 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    margin-bottom: 70px;
+  }
+}
+
+@include mq-down($breakpoint: sm) {
+  .fv__inner {
+    text-align: center;
+    max-width: 365px;
+    padding: 0 5px;
+  }
+  .fv__text {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    max-width: 55%;
+  }
+  .fv__btn {
+    padding: 5px 10px;
+    background: #A26C54 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+}

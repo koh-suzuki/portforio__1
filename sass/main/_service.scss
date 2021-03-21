@@ -15,3 +15,16 @@
 .service__text {
   padding: 20px 20px 30px;
 }
+
+@include mq-down($breakpoint: md) {
+  .service__list {
+    flex-direction: column;
+  }
+  .service__item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  .service__title {
+    padding-top:30px 
+  }
+}

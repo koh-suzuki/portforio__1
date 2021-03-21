@@ -24,3 +24,16 @@
 #works > .section__text {
   padding-bottom: -20px;
 }
+
+@include mq-down($breakpoint: md) {
+  .warks__wrapper {
+    width: 80%;
+  }
+  .works__list {
+    flex-direction: column;
+  }
+  .work__item {
+    width: 80%;
+    margin: 0 auto 20px;
+  }
+}

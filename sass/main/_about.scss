@@ -26,3 +26,26 @@
 .about__text {
   padding: 20px 0 0;
 }
+
+@include mq-down($breakpoint: md) {
+  .about__title-mt {
+    margin-top: 70px;
+  }
+  .section__about {
+    flex-direction: column;
+    height: auto;
+  }
+  .about__img {
+    width: 80%;
+    height: 430px;
+    margin: 0 0 30px;
+  }
+  .about__list {
+    max-width: 80%;
+    margin-left: 0;
+  }
+  .about__item {
+    padding-bottom: 0;
+    padding-top: 30px;
+  }
+}

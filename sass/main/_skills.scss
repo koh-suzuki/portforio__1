@@ -16,9 +16,6 @@
 .skill__inner {
   z-index: 1;
 }
-.sub__title {
-  margin: 30px 0 10px;
-}
 .content {
   display: flex;
   flex-wrap: wrap;
@@ -31,4 +28,17 @@
 }
 .content__text {
   padding: 24px 0 35px 0;
+}
+
+@include mq-down($breakpoint: md) {
+  .skill__inner {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content__item {
+    width: 100%;
+  }
 }
