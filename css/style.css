@@ -519,10 +519,47 @@ body {
 }
 
 .header__item {
-  padding: 0 16px 2px;
+  margin-left: 16px;
+  position: relative;
+  overflow: hidden;
 }
 
-.header__list {
+.header__item > a {
+  display: block;
+  padding: 10px 0 10px;
+}
+
+/* ボーダー */
+.border {
+  position: absolute;
+  display: block;
+  height: 3px;
+  background-color: #A26C54;
+  overflow: hidden;
+  transition: .3s;
+}
+
+.border.bottom {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* マウスオーバー */
+.header__item > a:hover {
+  opacity: .5;
+}
+
+.header__item:hover .border {
+  transform: translate3d(0, 0, 0);
+}
+
+.u-visuallyHidden {
+  display: none;
+}
+
+#js-buttonHamburger {
   display: none;
 }
 
@@ -548,6 +585,7 @@ body {
   /* お肉の幅 */
   height: 2px;
   /* お肉の高さ */
+  right: 20px;
   background-color: #505050;
   transition: inherit;
 }
@@ -621,6 +659,12 @@ body {
 @media screen and (max-width: 767px) {
   .header {
     height: 55px;
+  }
+  .header__list {
+    display: none;
+  }
+  #js-buttonHamburger {
+    display: block;
   }
 }
 

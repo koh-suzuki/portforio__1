@@ -20,16 +20,44 @@
   margin-right: -8px;
 }
 .header__item {
-  padding: 0 16px 2px;
-  // border-bottom: 2px solid #A26C54;
+  margin-left: 16px;
+  position: relative;
+  overflow: hidden;
 }
-
-.header__list {
+.header__item > a {
+  display: block;
+  padding: 10px 0 10px;
+}
+/* ボーダー */
+.border {
+  position: absolute;
+  display: block;
+  height: 3px;
+  background-color: #A26C54;
+  overflow: hidden;
+  transition: .3s;
+}  
+.border.bottom {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+/* マウスオーバー */
+.header__item > a:hover {
+  opacity: .5;
+}
+.header__item:hover .border {
+  transform: translate3d(0, 0, 0);
+}
+.u-visuallyHidden {
   display: none;
 }
 
-
 // ハンバーガーメニュー
+#js-buttonHamburger {
+  display: none;
+}
 .u-visuallyHidden {
   position: absolute;
   white-space: nowrap;
@@ -48,6 +76,7 @@
   position: absolute;
   width: 18px; /* お肉の幅 */
   height: 2px; /* お肉の高さ */
+  right: 20px;
   background-color: #505050;
   -webkit-transition: inherit;
           transition: inherit;
@@ -132,5 +161,11 @@
 @include mq-down($breakpoint: md) {
   .header {
     height: 55px;
+  }
+  .header__list {
+    display: none;
+  }
+  #js-buttonHamburger {
+    display: block;
   }
 }
